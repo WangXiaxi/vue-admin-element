@@ -1,0 +1,202 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #dedede;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    // background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.fillcontain{
+    height: 100%;
+    width: 100%;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.topFS{
+  margin-bottom: 20px;
+}
+.Pagination{
+  margin-top: 20px;
+}
+.table_container{
+  padding: 20px;
+}
+.el-input.is-disabled .el-input__inner{
+  color:#6c6c6c;
+  background: #ebf2f8;
+  cursor:default;
+}
+
+.yu-photobox{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url(../assets/image/no-img.png) 50% 50%/auto 90% no-repeat;
+}
+.yu-photobox img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+}
+
+.topFS.el-row {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    font-size: 0;
+    &>.el-input, &>.el-button, &>.el-date-editor, &>.el-select, &>.el-cascader {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .el-button {
+
+    }
+}
+
+.topFS .el-cascader {
+    width: 250px;
+}
+
+.topFS .el-input {
+    width: 250px;
+}
+
+.el-table {
+    z-index: 0;
+}
+
+.piccontet {
+    position: relative;
+    display: block;
+    width:100%;
+    height:100%;
+}
+.piccontet img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.piccontet span {
+    position: absolute;
+    top: 10px;
+    padding: 10px 20px;
+    color: red;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+}
+
+.el-tips {
+    padding: 8px 16px;
+    background-color: #ecf8ff;
+    border-radius: 4px;
+    border-left: 5px solid #50bfff;
+    margin: 20px 0;
+}
+
+.demo-table-expand {
+    font-size: 0;
+}
+
+.demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
